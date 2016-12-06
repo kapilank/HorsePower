@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DealerDeleteController">
+   <children>
+      <TableView fx:id="vehicles" layoutX="125.0" layoutY="95.0" prefHeight="411.0" prefWidth="602.0">
+         <columns>
+            <TableColumn prefWidth="149.0" text="Car Model">
+               <cellValueFactory>
+                  <PropertyValueFactory property="model" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="153.0" text="Car Style">
+               <cellValueFactory>
+                  <PropertyValueFactory property="style" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="153.0" text="Car Year">
+               <cellValueFactory>
+                  <PropertyValueFactory property="year" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="146.0" text="Car Color">
+               <cellValueFactory>
+                  <PropertyValueFactory property="color" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Button fx:id="deleteCar" layoutX="355.0" layoutY="520.0" mnemonicParsing="false" text="Delete from Dealers" />
+      <Button layoutX="14.0" layoutY="559.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button layoutX="725.0" layoutY="559.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Text layoutX="125.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Horsepower, the one stop to find your dream ride !" wrappingWidth="601.7257079825399">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
